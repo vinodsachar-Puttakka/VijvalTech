@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Vijval Technology Mysuru — Water Purifier Repair & Sales, Washing Machine Repair, Chimney Cleaning, TV Installation, Solar Cleaning & more. Services from ₹399. Call or WhatsApp +91 80500 17757.">
+<meta name="keywords" content="washing machine repair Mysuru, water purifier Mysuru, chimney cleaning Mysore, fridge repair Mysore, TV installation Mysuru, Vijval Technology">
+<title>Vijval Technology — Home Appliance Repair & Sales, Mysuru</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --blue:#1346a0;
+  --blue-dark:#0c2f72;
+  --blue-light:#e8effe;
+  --orange:#f5820d;
+  --orange-light:#fff4e6;
+  --green-wa:#25D366;
+  --white:#ffffff;
+  --off:#f6f8ff;
+  --slate:#1e293b;
+  --slate-mid:#475569;
+  --slate-light:#94a3b8;
+  --border:#dde4f5;
+  --font-head:'Syne',sans-serif;
+  --font-body:'Nunito',sans-serif;
+  --radius:14px;
+  --shadow:0 4px 24px rgba(19,70,160,0.10);
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);background:var(--white);color:var(--slate);font-size:16px;line-height:1.6;overflow-x:hidden}
+
+/* ── STICKY NAV ── */
+nav{
+  position:sticky;top:0;z-index:100;
+  background:var(--white);
+  border-bottom:1px solid var(--border);
+  padding:0 4%;
+  display:flex;align-items:center;justify-content:space-between;
+  height:60px;
+  box-shadow:0 2px 12px rgba(19,70,160,0.07);
+}
+.nav-logo{
+  font-family:var(--font-head);font-size:1.2rem;font-weight:800;
+  color:var(--blue);text-decoration:none;letter-spacing:-0.02em;
+  display:flex;align-items:center;gap:0.4rem;
+}
+.nav-logo span{color:var(--orange)}
+.nav-logo svg{width:28px;height:28px}
+.nav-cta{
+  display:flex;gap:0.5rem;align-items:center;
+}
+.call-pill{
+  display:flex;align-items:center;gap:0.35rem;
+  background:var(--blue-light);color:var(--blue);
+  padding:0.4rem 0.9rem;border-radius:2rem;
+  font-size:0.8rem;font-weight:700;text-decoration:none;
+  border:none;cursor:pointer;font-family:var(--font-body);
+}
+.call-pill svg{width:14px;height:14px;fill:var(--blue)}
+.wa-pill{
+  display:flex;align-items:center;gap:0.35rem;
+  background:var(--green-wa);color:#fff;
+  padding:0.4rem 0.9rem;border-radius:2rem;
+  font-size:0.8rem;font-weight:700;text-decoration:none;
+}
+.wa-pill svg{width:14px;height:14px;fill:#fff}
+
+/* ── HERO ── */
+.hero{
+  background:linear-gradient(135deg,var(--blue-dark) 0%,var(--blue) 60%,#1e5fcc 100%);
+  padding:3rem 4% 2.5rem;
+  position:relative;overflow:hidden;
+}
+.hero::before{
+  content:'';position:absolute;top:-60px;right:-60px;
+  width:280px;height:280px;
+  background:rgba(255,255,255,0.04);
+  border-radius:50%;
+}
+.hero::after{
+  content:'';position:absolute;bottom:-80px;left:-40px;
+  width:220px;height:220px;
+  background:rgba(245,130,13,0.12);
+  border-radius:50%;
+}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:0.4rem;
+  background:rgba(255,255,255,0.12);
+  color:rgba(255,255,255,0.9);
+  font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;
+  padding:0.35rem 0.85rem;border-radius:2rem;
+  margin-bottom:1rem;
+}
+.hero h1{
+  font-family:var(--font-head);
+  font-size:clamp(1.8rem,6vw,2.6rem);
+  font-weight:800;color:#fff;
+  line-height:1.15;letter-spacing:-0.02em;
+  margin-bottom:0.75rem;
+}
+.hero h1 em{color:var(--orange);font-style:normal;}
+.hero p{
+  color:rgba(255,255,255,0.78);
+  font-size:0.95rem;line-height:1.7;
+  max-width:480px;margin-bottom:1.75rem;
+}
+.hero-btns{display:flex;gap:0.75rem;flex-wrap:wrap;}
+.btn-wa{
+  display:inline-flex;align-items:center;gap:0.5rem;
+  background:var(--green-wa);color:#fff;
+  padding:0.85rem 1.5rem;border-radius:2rem;
+  font-size:0.95rem;font-weight:700;text-decoration:none;
+  box-shadow:0 4px 20px rgba(37,211,102,0.35);
+  transition:transform .2s,box-shadow .2s;
+  font-family:var(--font-body);border:none;cursor:pointer;
+}
+.btn-wa:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(37,211,102,0.45)}
+.btn-wa svg{width:18px;height:18px;fill:#fff;flex-shrink:0}
+.btn-call{
+  display:inline-flex;align-items:center;gap:0.5rem;
+  background:rgba(255,255,255,0.12);color:#fff;
+  padding:0.85rem 1.5rem;border-radius:2rem;
+  font-size:0.95rem;font-weight:700;text-decoration:none;
+  border:1.5px solid rgba(255,255,255,0.25);
+  transition:background .2s;
+  font-family:var(--font-body);
+}
+.btn-call:hover{background:rgba(255,255,255,0.2)}
+.btn-call svg{width:16px;height:16px;fill:#fff;flex-shrink:0}
+
+.hero-stats{
+  display:flex;gap:1.5rem;margin-top:2rem;flex-wrap:wrap;
+}
+.hero-stat{
+  display:flex;flex-direction:column;
+}
+.hero-stat strong{
+  font-family:var(--font-head);font-size:1.5rem;font-weight:800;color:#fff;line-height:1;
+}
+.hero-stat span{font-size:0.72rem;color:rgba(255,255,255,0.6);font-weight:600;text-transform:uppercase;letter-spacing:0.05em}
+
+/* ── TRUST BAR ── */
+.trust-bar{
+  background:var(--orange);
+  padding:0.75rem 4%;
+  display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center;
+  overflow-x:auto;
+}
+.trust-item{
+  display:flex;align-items:center;gap:0.4rem;
+  font-size:0.78rem;font-weight:700;color:#fff;white-space:nowrap;
+}
+.trust-item svg{width:14px;height:14px;fill:#fff;flex-shrink:0}
+
+/* ── SECTIONS ── */
+section{padding:3.5rem 4%}
+.section-label{
+  display:inline-block;
+  font-size:0.68rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--orange);margin-bottom:0.5rem;
+}
+.section-title{
+  font-family:var(--font-head);
+  font-size:clamp(1.5rem,4vw,2.2rem);
+  font-weight:800;color:var(--slate);
+  letter-spacing:-0.02em;line-height:1.2;
+  margin-bottom:0.5rem;
+}
+.section-sub{color:var(--slate-mid);max-width:520px;font-size:0.92rem;margin-bottom:2.5rem;}
+
+/* ── SERVICES ── */
+#services{background:var(--off);padding-bottom:2.5rem}
+
+/* tier labels */
+.tier-label{
+  display:flex;align-items:center;gap:0.5rem;
+  font-size:0.68rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;
+  margin:2rem 0 0.75rem;
+  color:var(--slate-mid);
+}
+.tier-label::after{content:'';flex:1;height:1px;background:var(--border)}
+.tier-label.t1{color:var(--blue)}
+.tier-label.t1::before{content:'🔵'}
+.tier-label.t2{color:#0891b2}
+.tier-label.t2::before{content:'🩵'}
+.tier-label.t3{color:var(--slate-light)}
+.tier-label.t3::before{content:'⚪'}
+
+/* P1 — big hero cards, side by side on mobile */
+.p1-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:0.875rem;
+}
+.p1-card{
+  background:linear-gradient(135deg,var(--blue-dark),var(--blue));
+  border-radius:16px;
+  padding:1.4rem 1rem 1.2rem;
+  text-align:center;
+  text-decoration:none;
+  display:flex;flex-direction:column;align-items:center;gap:0.5rem;
+  position:relative;overflow:hidden;
+  transition:transform .2s,box-shadow .2s;
+  box-shadow:0 6px 24px rgba(19,70,160,0.22);
+}
+.p1-card::after{
+  content:'';position:absolute;top:-30px;right:-30px;
+  width:90px;height:90px;
+  background:rgba(255,255,255,0.07);border-radius:50%;
+}
+.p1-card:hover{transform:translateY(-3px);box-shadow:0 10px 32px rgba(19,70,160,0.32)}
+.p1-icon{font-size:2.2rem;line-height:1}
+.p1-name{font-family:var(--font-head);font-weight:700;font-size:0.88rem;color:#fff;line-height:1.25;margin-top:0.1rem}
+.p1-badge{
+  background:var(--orange);color:#fff;
+  font-size:0.62rem;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;
+  padding:0.18rem 0.55rem;border-radius:2rem;
+}
+.p1-hint{font-size:0.7rem;color:rgba(255,255,255,0.6)}
+
+/* P2 — 2 medium cards */
+.p2-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:0.875rem;
+}
+.p2-card{
+  background:var(--white);
+  border:2px solid #bae6fd;
+  border-radius:14px;
+  padding:1.1rem 0.9rem;
+  text-align:center;
+  text-decoration:none;
+  display:flex;flex-direction:column;align-items:center;gap:0.4rem;
+  transition:transform .2s,box-shadow .2s;
+  position:relative;overflow:hidden;
+}
+.p2-card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(8,145,178,0.15)}
+.p2-icon{
+  width:48px;height:48px;border-radius:12px;
+  background:linear-gradient(135deg,#e0f2fe,#bae6fd);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.5rem;
+}
+.p2-name{font-weight:700;font-size:0.82rem;color:var(--slate);line-height:1.25}
+.p2-badge{
+  font-size:0.62rem;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;
+  padding:0.18rem 0.55rem;border-radius:2rem;
+  background:#e0f2fe;color:#0369a1;
+}
+
+/* P3 — compact pill row, scroll on mobile */
+.p3-scroll{
+  display:flex;gap:0.6rem;
+  overflow-x:auto;
+  padding-bottom:0.5rem;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:none;
+}
+.p3-scroll::-webkit-scrollbar{display:none}
+.p3-pill{
+  display:flex;align-items:center;gap:0.5rem;
+  background:var(--white);
+  border:1.5px solid var(--border);
+  border-radius:2rem;
+  padding:0.55rem 1rem;
+  text-decoration:none;
+  white-space:nowrap;
+  font-size:0.8rem;font-weight:700;color:var(--slate-mid);
+  flex-shrink:0;
+  transition:border-color .15s,color .15s;
+}
+.p3-pill:hover{border-color:var(--blue);color:var(--blue)}
+.p3-pill span{font-size:1rem}
+
+/* ── WHY US ── */
+#why{background:var(--white)}
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+  gap:1.25rem;
+  margin-top:2.5rem;
+}
+.why-card{
+  background:var(--off);
+  border-radius:var(--radius);
+  padding:1.5rem;
+  border:1px solid var(--border);
+  display:flex;gap:1rem;align-items:flex-start;
+}
+.why-num{
+  width:40px;height:40px;flex-shrink:0;
+  background:var(--blue);color:#fff;
+  border-radius:10px;
+  font-family:var(--font-head);font-size:1.1rem;font-weight:800;
+  display:flex;align-items:center;justify-content:center;
+}
+.why-title{font-weight:700;font-size:0.92rem;color:var(--slate);margin-bottom:0.3rem}
+.why-desc{font-size:0.82rem;color:var(--slate-mid);line-height:1.6}
+
+/* ── BEFORE AFTER ── */
+#gallery{background:var(--off)}
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+  gap:1.25rem;
+}
+.ba-card{
+  background:var(--white);
+  border-radius:var(--radius);
+  overflow:hidden;
+  border:1px solid var(--border);
+  box-shadow:var(--shadow);
+}
+.ba-imgs{
+  display:grid;grid-template-columns:1fr 1fr;
+  position:relative;
+}
+.ba-img{
+  aspect-ratio:4/3;
+  display:flex;align-items:center;justify-content:center;
+  flex-direction:column;gap:0.4rem;
+  font-size:2.5rem;
+}
+.ba-img.before{background:#fff0f0}
+.ba-img.after{background:#f0fff4}
+.ba-divider{
+  position:absolute;left:50%;top:0;
+  width:3px;height:100%;
+  background:var(--white);
+  transform:translateX(-50%);
+  z-index:2;
+}
+.ba-arrow{
+  position:absolute;left:50%;top:50%;
+  transform:translate(-50%,-50%);
+  width:28px;height:28px;
+  background:var(--blue);
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  z-index:3;
+  font-size:0.7rem;color:#fff;
+}
+.ba-label{
+  font-size:0.65rem;font-weight:800;
+  letter-spacing:0.08em;text-transform:uppercase;
+  opacity:0.7;
+}
+.ba-info{padding:1rem}
+.ba-service{
+  font-size:0.7rem;font-weight:800;
+  color:var(--blue);letter-spacing:0.08em;text-transform:uppercase;
+  margin-bottom:0.3rem;
+}
+.ba-title{font-weight:700;font-size:0.9rem;color:var(--slate);margin-bottom:0.2rem}
+.ba-desc{font-size:0.78rem;color:var(--slate-mid)}
+
+/* ── REVIEWS ── */
+#reviews{background:var(--white)}
+.reviews-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+  gap:1.25rem;
+}
+.review-card{
+  background:var(--off);
+  border-radius:var(--radius);
+  padding:1.25rem;
+  border:1px solid var(--border);
+}
+.review-stars{color:var(--orange);font-size:0.9rem;margin-bottom:0.6rem;letter-spacing:0.05em}
+.review-text{
+  font-size:0.875rem;color:var(--slate);
+  line-height:1.7;margin-bottom:1rem;
+  font-style:italic;
+}
+.reviewer{display:flex;align-items:center;gap:0.75rem}
+.reviewer-av{
+  width:36px;height:36px;border-radius:50%;
+  background:var(--blue);color:#fff;
+  font-weight:800;font-size:0.75rem;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.reviewer-name{font-weight:700;font-size:0.85rem;color:var(--slate)}
+.reviewer-loc{font-size:0.72rem;color:var(--slate-light)}
+.google-badge{
+  display:inline-flex;align-items:center;gap:0.35rem;
+  background:var(--white);border:1px solid var(--border);
+  border-radius:2rem;padding:0.3rem 0.75rem;
+  font-size:0.7rem;font-weight:700;color:var(--slate-mid);
+  margin-bottom:1.5rem;
+}
+
+/* ── SERVICE AREAS ── */
+#areas{background:var(--blue-dark);color:#fff}
+#areas .section-title{color:#fff}
+#areas .section-sub{color:rgba(255,255,255,0.65)}
+.areas-grid{
+  display:flex;flex-wrap:wrap;gap:0.6rem;
+}
+.area-pill{
+  background:rgba(255,255,255,0.1);
+  color:rgba(255,255,255,0.9);
+  border:1px solid rgba(255,255,255,0.15);
+  border-radius:2rem;
+  padding:0.45rem 1rem;
+  font-size:0.82rem;font-weight:600;
+  display:flex;align-items:center;gap:0.35rem;
+}
+.area-pill svg{width:12px;height:12px;fill:var(--orange);flex-shrink:0}
+
+/* ── FAQ ── */
+#faq{background:var(--off)}
+.faq-list{max-width:680px;}
+.faq-item{
+  background:var(--white);
+  border-radius:var(--radius);
+  margin-bottom:0.75rem;
+  border:1px solid var(--border);
+  overflow:hidden;
+}
+.faq-q{
+  padding:1rem 1.25rem;
+  display:flex;justify-content:space-between;align-items:center;gap:1rem;
+  cursor:pointer;font-weight:700;font-size:0.9rem;color:var(--slate);
+}
+.faq-icon{
+  width:26px;height:26px;flex-shrink:0;
+  background:var(--blue-light);color:var(--blue);
+  border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-size:1rem;font-weight:700;transition:transform .2s,background .2s;
+}
+.faq-item.open .faq-icon{background:var(--blue);color:#fff;transform:rotate(45deg)}
+.faq-a{
+  max-height:0;overflow:hidden;
+  transition:max-height .3s ease,padding .3s;
+  font-size:0.875rem;color:var(--slate-mid);line-height:1.7;
+  padding:0 1.25rem;
+}
+.faq-item.open .faq-a{max-height:300px;padding:0 1.25rem 1rem}
+
+/* ── WA CTA BANNER ── */
+.wa-banner{
+  background:linear-gradient(135deg,#075E54,#128C7E);
+  padding:3rem 4%;text-align:center;
+}
+.wa-banner h2{
+  font-family:var(--font-head);
+  font-size:clamp(1.4rem,4vw,2rem);
+  font-weight:800;color:#fff;
+  margin-bottom:0.6rem;letter-spacing:-0.02em;
+}
+.wa-banner p{color:rgba(255,255,255,0.75);margin-bottom:1.75rem;font-size:0.92rem}
+.wa-banner-btn{
+  display:inline-flex;align-items:center;gap:0.75rem;
+  background:#fff;color:#075E54;
+  padding:1rem 2rem;border-radius:2rem;
+  font-size:1rem;font-weight:800;text-decoration:none;
+  box-shadow:0 4px 24px rgba(0,0,0,0.2);
+  transition:transform .2s;font-family:var(--font-body);
+}
+.wa-banner-btn:hover{transform:scale(1.03)}
+.wa-banner-btn svg{width:22px;height:22px;fill:#25D366;flex-shrink:0}
+
+/* ── FOOTER ── */
+footer{
+  background:var(--slate);
+  padding:2.5rem 4% 1.5rem;
+}
+.footer-top{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:2rem;margin-bottom:2rem;
+}
+.footer-brand .logo{
+  font-family:var(--font-head);font-size:1.2rem;font-weight:800;
+  color:#fff;display:block;margin-bottom:0.6rem;
+}
+.footer-brand .logo span{color:var(--orange)}
+.footer-desc{font-size:0.82rem;color:rgba(255,255,255,0.5);line-height:1.65}
+.footer-contact h4{
+  font-size:0.68rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;
+  color:rgba(255,255,255,0.4);margin-bottom:0.85rem;
+}
+.contact-item{
+  display:flex;align-items:flex-start;gap:0.6rem;
+  margin-bottom:0.75rem;
+}
+.contact-item svg{width:14px;height:14px;flex-shrink:0;fill:var(--orange);margin-top:3px}
+.contact-item a,.contact-item span{
+  font-size:0.82rem;color:rgba(255,255,255,0.7);text-decoration:none;line-height:1.5;
+}
+.contact-item a:hover{color:#fff}
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,0.08);
+  padding-top:1.25rem;
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:0.5rem;
+  font-size:0.72rem;color:rgba(255,255,255,0.3);
+}
+
+/* ── FLOATING WA ── */
+.float-wa{
+  position:fixed;bottom:1.5rem;right:1.5rem;z-index:150;
+  width:58px;height:58px;
+  background:var(--green-wa);
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 20px rgba(37,211,102,0.45);
+  text-decoration:none;
+  animation:pulse 2.5s infinite;
+}
+.float-wa svg{width:28px;height:28px;fill:#fff}
+@keyframes pulse{
+  0%,100%{box-shadow:0 4px 20px rgba(37,211,102,0.45),0 0 0 0 rgba(37,211,102,0.4)}
+  50%{box-shadow:0 4px 20px rgba(37,211,102,0.45),0 0 0 12px rgba(37,211,102,0)}
+}
+
+/* ── MOBILE ── */
+@media(max-width:480px){
+  .nav-logo{font-size:1rem}
+  .hero{padding:2rem 4% 2rem}
+  .hero h1{font-size:1.7rem}
+  .hero-stats{gap:1rem}
+  .services-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-top{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <svg viewBox="0 0 32 32" fill="none">
+      <rect width="32" height="32" rx="8" fill="#1346a0"/>
+      <path d="M8 22c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="16" cy="11" r="3" fill="#f5820d"/>
+      <path d="M12 26h8" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+    Vijval <span>Tech</span>
+  </a>
+  <div class="nav-cta">
+    <a href="tel:+918050017757" class="call-pill">
+      <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+      Call
+    </a>
+    <a href="https://wa.me/918050017757?text=Hi%20Vijval%20Technology%2C%20I%20need%20a%20repair%20service." class="wa-pill" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.118 1.532 5.845L.057 23.997l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.371l-.36-.213-3.757.984 1.002-3.657-.234-.375A9.817 9.817 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"/></svg>
+      WhatsApp
+    </a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-tag">&#127968; Mysuru's Trusted Home Appliance Experts</div>
+  <h1>Fast Repair &<br><em>Quality Service</em><br>at Your Doorstep</h1>
+  <div style="display:inline-flex;align-items:center;gap:0.5rem;background:var(--orange);color:#fff;font-family:var(--font-head);font-size:0.95rem;font-weight:800;padding:0.55rem 1.2rem;border-radius:2rem;margin-bottom:1rem;box-shadow:0 4px 16px rgba(245,130,13,0.45);letter-spacing:0.01em;">
+    <span style="font-size:1.1rem">🏷️</span> Services Starting from <span style="font-size:1.2rem;margin-left:2px">₹399</span>
+  </div>
+  <p>Water purifier repair, washing machine repair & sales across Mysuru. Same-day service available — WhatsApp us now.</p>
+  <div class="hero-btns">
+    <a href="https://wa.me/918050017757?text=Hi%20Vijval%20Tech%2C%20I%20need%20a%20repair%20service." class="btn-wa" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.118 1.532 5.845L.057 23.997l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.371l-.36-.213-3.757.984 1.002-3.657-.234-.375A9.817 9.817 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"/></svg>
+      Book on WhatsApp
+    </a>
+    <a href="tel:+918050017757" class="btn-call">
+      <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+      +91 80500 17757
+    </a>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat"><strong>500+</strong><span>Happy Customers</span></div>
+    <div class="hero-stat"><strong>5&#9733;</strong><span>Google Rating</span></div>
+    <div class="hero-stat"><strong>Same Day</strong><span>Service Available</span></div>
+  </div>
+</div>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-item"><svg viewBox="0 0 20 20"><path d="M10 2l2.4 4.9 5.4.8-3.9 3.8.9 5.3L10 14.3l-4.8 2.5.9-5.3L2.2 7.7l5.4-.8z"/></svg>Experienced Technicians</div>
+  <div class="trust-item"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="8"/><path d="M10 6v4l2.5 2.5" stroke="#fff" stroke-width="1.5" fill="none"/></svg>Same-Day Service</div>
+  <div class="trust-item"><svg viewBox="0 0 20 20"><path d="M10 2l1.8 5.5H18l-5 3.6 1.9 5.9L10 14l-5 3 1.9-5.9-5-3.6h6.2z"/></svg>Genuine Spare Parts</div>
+  <div class="trust-item"><svg viewBox="0 0 20 20"><path d="M10 18s-8-4.5-8-10a8 8 0 0116 0c0 5.5-8 10-8 10z"/></svg>Doorstep Service</div>
+  <div class="trust-item"><svg viewBox="0 0 20 20"><path d="M4 10l4 4 8-8"/></svg>Service Warranty</div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-label">What We Do</div>
+  <div class="section-title">Our Services</div>
+  <div class="section-sub">Repair & sales for home appliances across Mysuru. Tap to book instantly on WhatsApp.</div>
+
+  <!-- PRIORITY 1 -->
+  <div class="tier-label t1">Most Requested</div>
+  <div class="p1-grid">
+    <a href="https://wa.me/918050017757?text=Hi%20Vijval%20Tech%2C%20I%20need%20Water%20Purifier%20repair." class="p1-card" target="_blank">
+      <div class="p1-icon">&#128167;</div>
+      <div class="p1-name">Water Purifier Repair</div>
+      <div class="p1-badge">from ₹399</div>
+      <div class="p1-hint">Tap to Book ↗</div>
+    </a>
+    <a href="https://wa.me/918050017757?text=Hi%20Vijval%20Tech%2C%20I%20need%20Washing%20Machine%20repair." class="p1-card" target="_blank">
+      <div class="p1-icon">&#129681;</div>
+      <div class="p1-name">Washing Machine Repair</div>
+      <div class="p1-badge">from ₹399</div>
+      <div class="p1-hint">Tap to Book ↗</div>
+    </a>
+  </div>
+
+  <!-- PRIORITY 2 -->
+  <div class="tier-label t2">Also Available</div>
+  <div class="p2-grid">
+    <a href="https://wa.me/918050017757?text=Hi%20Vijval%20Tech%2C%20I%20want%20to%20buy%20a%20new%20Water%20Purifier." class="p2-card" target="_blank">
+      <div class="p2-icon">&#128167;</div>
+      <div class="p2-name">New Water Purifier Sale</div>
+      <div class="p2-badge">Sale</div>
+    </a>
+    <a href="https://wa.me/918050017757?text=Hi%20Vijval%20Tech%2C%20I%20want%20a%20Refurbished%20Washing%20Machine." class="p2-card" target="_blank">
+      <div class="p2-icon">&#128717;</div>
+      <div class="p2-name">Refurbished Washing Machine</div>
+      <div class="p2-badge">Sale</div>
+    </a>
+  </div>
+
+  <!-- PRIORITY 3 -->
+  <div class="tier-label t3">More Services</div>
+  <div class="p3-scroll">
+    <a href="https://wa.me/918050017757?text=Hi%20Vijval%20Tech%2C%20I%20need%20Chimney%20cleaning." class="p3-pill" target="_blank"><span>&#128168;</span>Chimney Cleaning</a>
+    <a href="https://wa.me/918050017757?text=Hi%20Vijval%20Tech%2C%20I%20need%20Fridge%20repair." class="p3-pill" target="_blank"><span>&#10052;</span>Fridge Repair</a>
+    <a href="https://wa.me/918050017757?text=Hi%20Vijval%20Tech%2C%20I%20need%20Microwave%20repair." class="p3-pill" target="_blank"><span>&#127828;</span>Microwave Repair</a>
+    <a href="https://wa.me/918050017757?text=Hi%20Vijval%20Tech%2C%20I%20need%20TV%20installation." class="p3-pill" target="_blank"><span>&#128250;</span>TV Installation</a>
+    <a href="https://wa.me/918050017757?text=Hi%20Vijval%20Tech%2C%20I%20need%20Solar%20Panel%20cleaning." class="p3-pill" target="_blank"><span>&#9728;</span>Solar Panel Cleaning</a>
+    <a href="https://wa.me/918050017757?text=Hi%20Vijval%20Tech%2C%20I%20need%20HOB%20service." class="p3-pill" target="_blank"><span>&#128293;</span>HOB Service</a>
+    <a href="https://wa.me/918050017757?text=Hi%20Vijval%20Tech%2C%20I%20need%20Air%20Cooler%20repair." class="p3-pill" target="_blank"><span>&#10052;&#65039;</span>Air Cooler Repair</a>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why">
+  <div class="section-label">Why Choose Us</div>
+  <div class="section-title">Mysuru Trusts Vijval Technology</div>
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="why-num">1</div>
+      <div>
+        <div class="why-title">Same-Day Service</div>
+        <div class="why-desc">Book on WhatsApp before noon and we'll visit your home the same day across Mysuru.</div>
+      </div>
+    </div>
+    <div class="why-card">
+      <div class="why-num">2</div>
+      <div>
+        <div class="why-title">Genuine Spare Parts</div>
+        <div class="why-desc">We only use original or OEM-certified spare parts — no cheap substitutes that fail in weeks.</div>
+      </div>
+    </div>
+    <div class="why-card">
+      <div class="why-num">3</div>
+      <div>
+        <div class="why-title">Transparent Pricing</div>
+        <div class="why-desc">We give you a clear quote before starting any work. No hidden charges, no surprises.</div>
+      </div>
+    </div>
+    <div class="why-card">
+      <div class="why-num">4</div>
+      <div>
+        <div class="why-title">Service Warranty</div>
+        <div class="why-desc">All repairs come with a service warranty. If the same issue returns, we fix it free of charge.</div>
+      </div>
+    </div>
+    <div class="why-card">
+      <div class="why-num">5</div>
+      <div>
+        <div class="why-title">All Brands Covered</div>
+        <div class="why-desc">Samsung, LG, Whirlpool, IFB, Bosch, Aquaguard, Kent, Godrej, Haier — we handle them all.</div>
+      </div>
+    </div>
+    <div class="why-card">
+      <div class="why-num">6</div>
+      <div>
+        <div class="why-title">5&#9733; Google Rated</div>
+        <div class="why-desc">Hundreds of happy customers across Mysuru have rated us 5 stars on Google. See reviews below.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE / AFTER -->
+<section id="gallery">
+  <div class="section-label">Our Work</div>
+  <div class="section-title">Before &amp; After</div>
+  <div class="section-sub">Real jobs, real results. Tap any card to book the same service on WhatsApp.</div>
+  <div class="gallery-grid">
+    <a href="https://wa.me/918050017757?text=Hi%20Vijval%20Tech%2C%20I%20need%20Washing%20Machine%20repair." class="ba-card" style="text-decoration:none" target="_blank">
+      <div class="ba-imgs">
+        <div class="ba-img before">&#129681;<div class="ba-label">Before</div></div>
+        <div class="ba-img after">&#10024;<div class="ba-label">After</div></div>
+        <div class="ba-divider"></div>
+        <div class="ba-arrow">&#10140;</div>
+      </div>
+      <div class="ba-info">
+        <div class="ba-service">Washing Machine</div>
+        <div class="ba-title">Drum not spinning — Fixed same day</div>
+        <div class="ba-desc">Motor belt replaced, drum balanced. Machine running like new in 2 hours.</div>
+      </div>
+    </a>
+    <a href="https://wa.me/918050017757?text=Hi%20Vijval%20Tech%2C%20I%20need%20Water%20Purifier%20repair." class="ba-card" style="text-decoration:none" target="_blank">
+      <div class="ba-imgs">
+        <div class="ba-img before" style="background:#e8f4ff">&#128167;<div class="ba-label">Before</div></div>
+        <div class="ba-img after" style="background:#f0fff4">&#10024;<div class="ba-label">After</div></div>
+        <div class="ba-divider"></div>
+        <div class="ba-arrow">&#10140;</div>
+      </div>
+      <div class="ba-info">
+        <div class="ba-service">Water Purifier</div>
+        <div class="ba-title">No water flow & bad taste — Fully serviced</div>
+        <div class="ba-desc">Filters replaced, membrane cleaned, TDS normalised. Pure water restored in 1 hour.</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="section-label">Customer Reviews</div>
+  <div class="section-title">What Mysuru Says</div>
+  <div class="google-badge">
+    <svg width="14" height="14" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+    Verified Google Reviews
+  </div>
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <div class="review-text">"Very professional service. My washing machine was completely dead and they fixed it within 2 hours at home. Reasonable price and genuine parts used."</div>
+      <div class="reviewer">
+        <div class="reviewer-av">RK</div>
+        <div>
+          <div class="reviewer-name">Ravi Kumar</div>
+          <div class="reviewer-loc">Bhogadi, Mysuru</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <div class="review-text">"Got a water purifier from Vijval Technology. Installation was clean and the price was much better than the showroom. Very happy with the service."</div>
+      <div class="reviewer">
+        <div class="reviewer-av">SN</div>
+        <div>
+          <div class="reviewer-name">Sunitha N.</div>
+          <div class="reviewer-loc">Bank Employees Colony, Mysuru</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <div class="review-text">"Chimney deep clean done perfectly. It was completely blocked with grease and now works like new. Responded quickly on WhatsApp and came same day."</div>
+      <div class="reviewer">
+        <div class="reviewer-av">MP</div>
+        <div>
+          <div class="reviewer-name">Meena Prakash</div>
+          <div class="reviewer-loc">Hebbal, Mysuru</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREAS -->
+<section id="areas">
+  <div class="section-label">Where We Serve</div>
+  <div class="section-title">Service Areas in Mysuru</div>
+  <div class="section-sub">We cover all major areas in and around Mysuru city. Not sure? Just WhatsApp us — we'll confirm.</div>
+  <div class="areas-grid">
+    <div class="area-pill"><svg viewBox="0 0 12 12"><circle cx="6" cy="6" r="5"/></svg>Bhogadi</div>
+    <div class="area-pill"><svg viewBox="0 0 12 12"><circle cx="6" cy="6" r="5"/></svg>Hebbal</div>
+    <div class="area-pill"><svg viewBox="0 0 12 12"><circle cx="6" cy="6" r="5"/></svg>Vijayanagar</div>
+    <div class="area-pill"><svg viewBox="0 0 12 12"><circle cx="6" cy="6" r="5"/></svg>Kuvempunagar</div>
+    <div class="area-pill"><svg viewBox="0 0 12 12"><circle cx="6" cy="6" r="5"/></svg>Gokulam</div>
+    <div class="area-pill"><svg viewBox="0 0 12 12"><circle cx="6" cy="6" r="5"/></svg>Nazarbad</div>
+    <div class="area-pill"><svg viewBox="0 0 12 12"><circle cx="6" cy="6" r="5"/></svg>Saraswathipuram</div>
+    <div class="area-pill"><svg viewBox="0 0 12 12"><circle cx="6" cy="6" r="5"/></svg>Lakshmipuram</div>
+    <div class="area-pill"><svg viewBox="0 0 12 12"><circle cx="6" cy="6" r="5"/></svg>Jayalakshmipuram</div>
+    <div class="area-pill"><svg viewBox="0 0 12 12"><circle cx="6" cy="6" r="5"/></svg>Alanahalli</div>
+    <div class="area-pill"><svg viewBox="0 0 12 12"><circle cx="6" cy="6" r="5"/></svg>Metagalli</div>
+    <div class="area-pill"><svg viewBox="0 0 12 12"><circle cx="6" cy="6" r="5"/></svg>Dattagalli</div>
+    <div class="area-pill"><svg viewBox="0 0 12 12"><circle cx="6" cy="6" r="5"/></svg>Bogadi Road</div>
+    <div class="area-pill"><svg viewBox="0 0 12 12"><circle cx="6" cy="6" r="5"/></svg>T Narasipura Road</div>
+    <div class="area-pill"><svg viewBox="0 0 12 12"><circle cx="6" cy="6" r="5"/></svg>Ring Road Areas</div>
+    <div class="area-pill"><svg viewBox="0 0 12 12"><circle cx="6" cy="6" r="5"/></svg>& Surrounding Areas</div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="section-label">FAQ</div>
+  <div class="section-title">Common Questions</div>
+  <div class="section-sub">Still have a question? Just WhatsApp us — we reply within minutes.</div>
+  <div class="faq-list" id="faqList">
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFAQ(this)">How do I book a service? <span class="faq-icon">+</span></div>
+      <div class="faq-a">Simply WhatsApp us at +91 80500 17757 or tap any "Book on WhatsApp" button. Tell us your appliance, problem, and location in Mysuru and we will confirm your visit time immediately. Services start from just ₹399.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFAQ(this)">Do you offer same-day service? <span class="faq-icon">+</span></div>
+      <div class="faq-a">Yes! If you book before noon, we do our best to visit the same day. For urgent repairs, mention it on WhatsApp and we will prioritise your request.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFAQ(this)">Which washing machine brands do you repair? <span class="faq-icon">+</span></div>
+      <div class="faq-a">We repair all major brands — Samsung, LG, Whirlpool, IFB, Bosch, Godrej, Haier, Videocon, and more. Both front-load and top-load machines.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFAQ(this)">Do you sell new or used washing machines? <span class="faq-icon">+</span></div>
+      <div class="faq-a">We sell used / second-hand washing machines that are fully serviced and tested. We also sell new water purifiers. WhatsApp us to see current available stock.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFAQ(this)">What is the service charge? <span class="faq-icon">+</span></div>
+      <div class="faq-a">Services start from ₹399. Repair costs vary by appliance and problem. We give you a full quote before starting any work — no surprises. WhatsApp us for a quick estimate based on your issue.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFAQ(this)">Do repairs come with a warranty? <span class="faq-icon">+</span></div>
+      <div class="faq-a">Yes. All repairs come with a service warranty. If the same problem recurs within the warranty period, we will fix it at no extra charge.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFAQ(this)">Which areas in Mysuru do you cover? <span class="faq-icon">+</span></div>
+      <div class="faq-a">We cover Bhogadi, Hebbal, Vijayanagar, Kuvempunagar, Gokulam, Nazarbad, Saraswathipuram, Lakshmipuram, Alanahalli, Metagalli, Dattagalli, and all surrounding areas of Mysuru. Not sure? Just WhatsApp us your location.</div>
+    </div>
+  </div>
+</section>
+
+<!-- WA CTA BANNER -->
+<div class="wa-banner">
+  <h2>&#128247; Book Your Service Now</h2>
+  <p>WhatsApp us your appliance problem — we'll reply within minutes and visit your home.</p>
+  <a href="https://wa.me/918050017757?text=Hi%20Vijval%20Tech%2C%20I%20need%20a%20home%20service%20booking." class="wa-banner-btn" target="_blank">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.118 1.532 5.845L.057 23.997l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.371l-.36-.213-3.757.984 1.002-3.657-.234-.375A9.817 9.817 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"/></svg>
+    Chat on WhatsApp — +91 80500 17757
+  </a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="logo">Vijval <span>Technology</span></span>
+      <div class="footer-desc">Home appliance repair & sales in Mysuru. Washing machines, water purifiers, chimneys, fridges, TVs, solar panels and more — at your doorstep.</div>
+    </div>
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <div class="contact-item" style="margin-bottom:0.5rem">
+        <svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+        <span style="color:#fff;font-weight:700;">Santhosh Kumar</span>
+      </div>
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+        <a href="tel:+918050017757">+91 80500 17757</a>
+      </div>
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.118 1.532 5.845L.057 23.997l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+        <a href="https://wa.me/918050017757" target="_blank">WhatsApp Us</a>
+      </div>
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        <span>527, Bank Colony Road, Bank Employees' Colony, Bhogadi, Mysuru – 570026</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&#169; 2025 Vijval Technology. All rights reserved.</span>
+    <span>Mysuru, Karnataka &#127470;&#127475;</span>
+  </div>
+</footer>
+
+<!-- FLOATING WA BUTTON -->
+<a href="https://wa.me/918050017757?text=Hi%20Vijval%20Technology%2C%20I%20need%20a%20service." class="float-wa" target="_blank" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.118 1.532 5.845L.057 23.997l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.371l-.36-.213-3.757.984 1.002-3.657-.234-.375A9.817 9.817 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"/></svg>
+</a>
+
+<script>
+function toggleFAQ(el) {
+  const item = el.parentElement;
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+</script>
+</body>
+</html>
